@@ -1,63 +1,78 @@
 name: 3DFSC
 channels:
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
-  - _libgcc_mutex
-  - appdirs
-  - blas
-  - ca-certificates
-  - cudatoolkit
-  - cycler
-  - dask-core
-  - dbus
-  - expat
-  - fontconfig
-  - freetype
-  - glib
-  - gst-plugins-base
-  - gstreamer
-  - h5py
-  - hdf5
-  - icu
-  - imageio
-  - jbig
-  - jpeg
-  - libffi
-  - libgcc
-  - libgcc-ng
-  - libgfortran
-  - libgfortran-ng
-  - libiconv
-  - libpng
-  - libtiff
-  - libxcb
-  - libxml2
-  - llvmlite
-  - matplotlib
-  - mkl
-  - networkx
-  - numba
-  - olefile
-  - openssl
-  - pcre
-  - pillow
-  - pip
-  - pyparsing
-  - pyqt
+  - _libgcc_mutex=0.1
+  - appdirs=1.4.3
+  - blas=1.0
+  - ca-certificates=2020.1.1
+  - cloudpickle=1.3.0
+  - cudatoolkit=10.2.89
+  - cycler=0.10.0
+  - cytoolz=0.10.1
+  - dask-core=2.10.1
+  - dbus=1.13.12
+  - expat=2.2.6
+  - fontconfig=2.13.0
+  - freetype=2.9.1
+  - glib=2.63.1
+  - gst-plugins-base=1.14.0
+  - gstreamer=1.14.0
+  - h5py=2.10.0
+  - hdf5=1.10.4
+  - icu=58.2
+  - imageio=2.6.1
+  - intel-openmp=2020.0
+  - jbig=2.1
+  - jpeg=9b
+  - kiwisolver=1.1.0
+  - libedit=3.1
+  - libffi=3.2.1
+  - libgcc=7.2.0
+  - libgcc-ng=9.1.0
+  - libgfortran=3.0.0
+  - libgfortran-ng=7.3.0
+  - libiconv=1.15
+  - libpng=1.6.37
+  - libstdcxx-ng=9.1.0
+  - libtiff=4.1.0
+  - libuuid=1.0.3
+  - libxcb=1.13
+  - libxml2=2.9.9
+  - llvmlite=0.31.0
+  - matplotlib=3.1.3
+  - matplotlib-base=3.1.3
+  - mkl=2020.0
+  - mkl-service=2.3.0
+  - mkl_fft=1.0.15
+  - mkl_random=1.1.0
+  - ncurses=6.0
+  - networkx=2.4
+  - numba=0.48.0
+  - olefile=0.46
+  - openssl=1.0.2u
+  - pcre=8.43
+  - pillow=7.0.0
+  - pip=20.0.2
+  - pyparsing=2.4.6
+  - pyqt=5.9.2
   - python=3.6.2
-  - pywavelets
-  - qt
-  - readline
-  - scikit-image
-  - scipy
-  - sip
-  - sqlite
-  - tk
-  - toolz
-  - wheel
-  - xz
-  - zlib
+  - pywavelets=1.1.1
+  - qt=5.9.6
+  - readline=7.0
+  - scikit-image=0.16.2
+  - scipy=1.4.1
+  - setuptools=45.2.0
+  - sip=4.19.8
+  - sqlite=3.23.1
+  - tbb=2020.0
+  - tk=8.6.8
+  - toolz=0.10.0
+  - wheel=0.34.2
+  - xz=5.2.4
+  - zlib=1.2.11
+  - zstd=1.3.7
   - pip:
     - amqp==2.2.1
     - anyjson==0.3.3
@@ -73,7 +88,7 @@ dependencies:
     - cffi==1.10.0
     - chardet==3.0.4
     - click==6.7
-    - colorama==0.3.7
+    - colorama==0.3.9
     - cryptography==2.0.3
     - decorator==4.4.0
     - django==1.10.7
@@ -98,7 +113,7 @@ dependencies:
     - mako==1.1.0
     - markupsafe==1.1.1
     - mrcfile==1.0.0
-    - numpy==1.17.0
+    - numpy==1.15.4
     - nvidia-docker-compose==0.1.5
     - paramiko==2.2.1
     - psycopg2==2.7.4
@@ -107,28 +122,17 @@ dependencies:
     - pyasn1==0.3.2
     - pycodestyle==2.3.1
     - pycparser==2.18
-    - pycuda==2019.1.2
-    - pyflakes==1.6.0
-    - pyminizip==0.2.1
     - pynacl==1.1.2
-    - pytest==3.2.3
     - python-dateutil==2.8.0
     - pytools==2019.1.1
     - pytz==2019.2
     - pyyaml==3.12
-    - redis==2.10.5
     - requests==2.18.4
-    - rsa==3.4.2
-    - s3transfer==0.1.10
-    - scikit-cuda==0.5.1
-    - selenium==3.4.3
-    - setuptools==41.0.1
     - six==1.12.0
     - sqlparse==0.2.4
     - texttable==0.9.1
     - tornado==5.0
     - urllib3==1.22
-    - uwsgi==2.0.15
     - vine==1.1.4
     - websocket-client==0.46.0
 
