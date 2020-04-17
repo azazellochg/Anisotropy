@@ -1,18 +1,19 @@
 name: 3DFSC
 channels:
-  - conda-forge
   - defaults
+  - conda-forge
 dependencies:
   - _libgcc_mutex=0.1
-  - appdirs=1.4.3
   - blas=1.0
   - ca-certificates=2020.1.1
+  - certifi=2020.4.5.1
   - cloudpickle=1.3.0
   - cudatoolkit=10.2.89
   - cycler=0.10.0
   - cytoolz=0.10.1
-  - dask-core=2.10.1
+  - dask-core=2.14.0
   - dbus=1.13.12
+  - decorator=4.4.2
   - expat=2.2.6
   - fontconfig=2.13.0
   - freetype=2.9.1
@@ -22,18 +23,14 @@ dependencies:
   - h5py=2.10.0
   - hdf5=1.10.4
   - icu=58.2
-  - imageio=2.6.1
+  - imageio=2.8.0
   - intel-openmp=2020.0
-  - jbig=2.1
   - jpeg=9b
   - kiwisolver=1.1.0
   - libedit=3.1
   - libffi=3.2.1
-  - libgcc=7.2.0
   - libgcc-ng=9.1.0
-  - libgfortran=3.0.0
   - libgfortran-ng=7.3.0
-  - libiconv=1.15
   - libpng=1.6.37
   - libstdcxx-ng=9.1.0
   - libtiff=4.1.0
@@ -58,81 +55,25 @@ dependencies:
   - pyparsing=2.4.6
   - pyqt=5.9.2
   - python=3.6.2
+  - python-dateutil=2.8.1
   - pywavelets=1.1.1
   - qt=5.9.6
   - readline=7.0
   - scikit-image=0.16.2
   - scipy=1.4.1
-  - setuptools=45.2.0
+  - setuptools=46.1.3
   - sip=4.19.8
+  - six=1.14.0
   - sqlite=3.23.1
   - tbb=2020.0
   - tk=8.6.8
   - toolz=0.10.0
+  - tornado=6.0.4
   - wheel=0.34.2
-  - xz=5.2.4
+  - xz=5.2.5
   - zlib=1.2.11
   - zstd=1.3.7
   - pip:
-    - amqp==2.2.1
-    - anyjson==0.3.3
-    - asn1crypto==0.22.0
-    - autopep8==1.3.3
-    - babel==2.5.3
-    - bcrypt==3.1.3
-    - billiard==3.5.0.3
-    - botocore==1.6.5
-    - cached-property==1.3.1
-    - celery==4.1.0
-    - certifi==2019.6.16
-    - cffi==1.10.0
-    - chardet==3.0.4
-    - click==6.7
-    - colorama==0.3.9
-    - cryptography==2.0.3
-    - decorator==4.4.0
-    - django==1.10.7
-    - django-bootstrap3==9.0.0
-    - django-debug-toolbar==1.9.1
-    - django-fileprovider==0.1.4
-    - django-registration==2.2
-    - django-sendfile==0.3.11
-    - docker==2.7.0
-    - docker-compose==1.18.0
-    - docker-pycreds==0.2.1
-    - dockerpty==0.4.1
-    - docopt==0.6.2
-    - docutils==0.14
-    - flower==0.9.2
-    - gunicorn==19.7.1
-    - idna==2.6
-    - jinja2==2.10
-    - jmespath==0.9.3
-    - jsonschema==2.6.0
-    - kombu==4.1.0
-    - mako==1.1.0
-    - markupsafe==1.1.1
-    - mrcfile==1.0.0
-    - numpy==1.15.4
-    - nvidia-docker-compose==0.1.5
-    - paramiko==2.2.1
-    - psycopg2==2.7.4
-    - psycopg2-binary==2.7.4
-    - py==1.4.34
-    - pyasn1==0.3.2
-    - pycodestyle==2.3.1
-    - pycparser==2.18
-    - pynacl==1.1.2
-    - python-dateutil==2.8.0
-    - pytools==2019.1.1
-    - pytz==2019.2
-    - pyyaml==3.12
-    - requests==2.18.4
-    - six==1.12.0
-    - sqlparse==0.2.4
-    - texttable==0.9.1
-    - tornado==5.0
-    - urllib3==1.22
-    - vine==1.1.4
-    - websocket-client==0.46.0
-
+    - click==7.1.1
+    - mrcfile==1.1.2
+    - numpy==1.18.2
