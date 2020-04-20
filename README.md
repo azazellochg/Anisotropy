@@ -4,7 +4,7 @@ This is the most recent version of 3DFSC, by Philip Baldwin, Yong Zi Tan, and Dm
 
 GPU code and Conda environment by Carl Negro.
 
-3DFSC Program Suite requires Anaconda 3 to run, and UCSF Chimera to visualize the outputs.
+3DFSC Program Suite requires Miniconda 3 to run, and UCSF Chimera to visualize the outputs.
 
 Important: this version of the software is modified for use with Scipion (April 2020).
 
@@ -21,7 +21,7 @@ To view the 3DFSC parameters, access the help info like `ThreeDFSC/ThreeDFSC_Sta
 
 3DFSC now has GPU support through Numba for faster execution (typically ~10x faster than the CPU implementation). This requires that CUDA is installed correctly. See http://www.nvidia.com/Download/index.aspx. 
 
-To make use of a GPU, simply append the `--gpu` flag as a parameter to your ./run3DFSC.sh script.
+To make use of a GPU, simply append the `--gpu` flag as a parameter to ThreeDFSC_Start.py script.
 
 You can select which GPU to use for processing with the `--gpu_id` flag. E.g. `--gpu_id=2` to run 3DFSC on the GPU with index number 2. The program currently only allows a single GPU to be used at once; this may change in future versions.
 
