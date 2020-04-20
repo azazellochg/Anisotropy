@@ -1,5 +1,4 @@
 *.pyc
 *.bak
-Example/*
+Example
 .idea/*
-environment_orig.yml
