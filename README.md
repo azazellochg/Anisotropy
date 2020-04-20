@@ -15,7 +15,7 @@ Important: this version of the software is modified for use with Scipion (April 
 
 ## Execution ##
 
-To view the 3DFSC parameters, access the help info like `./run3DFSC.sh -h`.
+To view the 3DFSC parameters, access the help info like `ThreeDFSC/ThreeDFSC_Start.py -h`.
 
 ## GPU Execution ##
 
