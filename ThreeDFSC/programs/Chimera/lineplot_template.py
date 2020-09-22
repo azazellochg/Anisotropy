@@ -17,7 +17,7 @@ def ray_values(v, direction):
 	center = [0.5*(s+1) for s in d.size]
 	radius = 0.5*min([s*t for s,t in zip(d.size, d.step)])
 	steps = max(d.size)
-	from Matrix import norm
+	from geometry.matrix import norm
 	dn = norm(direction)
 	from numpy import array, arange, float32, outer
 	dir = array(direction)/dn
@@ -54,8 +54,8 @@ def plot(x, y, xlabel, ylabel, title, fig = None):
 #
 def update_plot(fsc_map, fig = None):
 	xf = fsc_map.openState.xform
-	from chimera import Vector
-	direction = xf.inverse().apply(Vector(0,0,-1)).data()
+	from geometry import vector
+	direction = xf.inverse().apply(vector(0,0,-1)).data()
 	preradii, values, radius = ray_values(fsc_map, direction)
 	radii = []
 	apix = #==apix==#
@@ -76,20 +76,20 @@ def update_plot(fsc_map, fig = None):
 # -----------------------------------------------------------------------------
 #
 def color_map(resolution):
-	import chimera
-	from chimera import runCommand
+	import runCommand
 	maxres = #==maxres==#
 	minres = #==minres==#
 	a = (resolution-maxres)/(minres-maxres)
 	r, g, b = 1-a, 0.0, a
-	runCommand('color %0.2f,%0.2f,%0.2f,1.0 #1' % (r, g, b))
+	runCommand('color %0.2f,%0.2f,%0.2f,1.0 #2' % (r, g, b))
 
 # -----------------------------------------------------------------------------
 #
-def fsc_plot(fscMap):
+def fsc_plot(session, fscMap):
 	fig = update_plot(fscMap)
-	from chimera import triggers
-	h = triggers.addHandler('OpenState', motion_cb, (fscMap, fig))
+	from chimerax import triggerset
+	ts = triggerset.TriggerSet()
+	h = ts.addHandler('OpenState', motion_cb, (fscMap, fig))
 
 # -----------------------------------------------------------------------------
 #
@@ -101,13 +101,6 @@ def motion_cb(trigger_name, mf, trigger_data):
 
 # -----------------------------------------------------------------------------
 #
-def fscplot_cmd(cmdname, args):
-	from Commands import volume_arg, parse_arguments
-	req_args = [('fscMap', volume_arg)]
-	kw = parse_arguments(cmdname, args, req_args)
-	fsc_plot(**kw)
-
-# -----------------------------------------------------------------------------
-#
-from Midas.midas_text import addCommand
-addCommand('fscplot', fscplot_cmd)
+from chimerax.core.commands import register, CmdDesc, VolumeArg
+fsc_plot_desc = CmdDesc(required=[("fscMap", VolumeArg)])
+register('fscplot', fsc_plot_desc, fsc_plot)
